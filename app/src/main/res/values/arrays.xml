@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="sds">
+        <item>数学</item>
+        <item>语文</item>
+
+        <item>英语</item>
+    </string-array>
+    <string-array name="home">
+        <item>安卓</item>
+        <item>JAVA</item>
+        <item>前端</item>
+    </string-array>
+    <string-array name="citys">
+    <item>北京</item>
+    <item>珠海</item>
+    <item>深圳</item>
+</string-array>
+
+    <string-array name="citys1">
+        <item>筛选</item>
+        <item>珠海</item>
+        <item>深圳</item>
+    </string-array>
+</resources>

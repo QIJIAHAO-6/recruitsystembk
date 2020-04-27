@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_mobile_navigation"
+    app:startDestination="@+id/nav1">
+
+    <fragment
+        android:id="@+id/nav1"
+        android:name="com.recruitsystem.myapplication.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav2"
+        android:name="com.recruitsystem.myapplication.ui.message.MessageFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_message" />
+
+    <fragment
+        android:id="@+id/nav3"
+        android:name="com.recruitsystem.myapplication.ui.boss.BossFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow" />
+
+    <fragment
+        android:id="@+id/nav4"
+        android:name="com.recruitsystem.myapplication.ui.user.UserFragment"
+        android:label="我"
+        tools:layout="@layout/fragment_user" />
+
+<!--    <fragment
+        android:id="@+id/nav_share"
+        android:name="com.huicunjun.zp.ui.share.ShareFragment"
+        android:label="@string/menu_share"
+        tools:layout="@layout/fragment_share" />
+
+    <fragment
+        android:id="@+id/nav_send"
+        android:name="com.huicunjun.zp.ui.about.SendFragment"
+        android:label="@string/menu_send"
+        tools:layout="@layout/fragment_send" />-->
+</navigation>

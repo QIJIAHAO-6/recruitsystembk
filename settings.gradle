@@ -1,0 +1,2 @@
+include ':app', ':bpermissions'
+rootProject.name='recruitsystembk'

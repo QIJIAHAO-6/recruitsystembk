@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:gravity="center">
+
+        <LinearLayout
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?selectableItemBackgroundBorderless"
+            android:padding="15dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_keyboard_arrow_left_black_24dp"
+                android:tint="#000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="详情"
+            android:textColor="#000"
+            android:textSize="19sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_menu_share"
+                android:tint="#000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/collection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_star_border_black_24dp"
+                android:tint="#000" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingStart="19dp">
+
+        <TextView
+            android:id="@+id/postName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="德邦海定快递员"
+            android:textColor="#000"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+<!--        <TextView-->
+<!--            android:id="@+id/tv2"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="30dp"-->
+<!--            android:layout_below="@+id/postName"-->
+<!--            android:layout_alignParentStart="true"-->
+<!--            android:layout_marginTop="17dp"-->
+<!--            android:background="@drawable/mq"-->
+<!--            android:paddingStart="10dp"-->
+<!--            android:paddingTop="5dp"-->
+<!--            android:paddingEnd="10dp"-->
+<!--            android:paddingBottom="5dp"-->
+<!--            android:text="名企"-->
+<!--            android:textColor="#FFF"-->
+<!--            android:textSize="13sp" />-->
+        <TextView
+            android:id="@+id/postCompany"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_below="@+id/postName"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="17dp"
+            android:background="@drawable/mq"
+            android:paddingStart="10dp"
+            android:paddingTop="5dp"
+            android:paddingEnd="10dp"
+            android:paddingBottom="5dp"
+            android:text="名企"
+            android:textColor="#FFF"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/postSalary"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_below="@+id/postCompany"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="10dp"
+            android:text="5000-10000元/月"
+            android:textColor="#FFE4222E"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/postCompany"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="12dp"
+            android:layout_toEndOf="@+id/postSalary"
+            android:text="同行平均薪资 5883元/月"
+            android:textColor="#999"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/postGuarantee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/postSalary"
+            android:layout_marginTop="14dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="1dp"
+                android:text="房补"
+                android:textColor="#3E6199" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="13dp"
+                android:text="话补"
+                android:textColor="#3E6199" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="13dp"
+                android:text="饭补"
+                android:textColor="#3E6199" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="13dp"
+                android:text="包住"
+                android:textColor="#3E6199" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="13dp"
+                android:text="加班补助"
+                android:textColor="#3E6199" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="13dp"
+                android:text="五险一金"
+                android:textColor="#3E6199" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/jobdescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/postGuarantee"
+            android:layout_marginTop="14dp"
+            android:text="职位描述"
+            android:textColor="#000" />
+
+
+        <TextView
+            android:id="@+id/postDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/jobdescription"
+            android:layout_marginTop="14dp"
+            android:text="招10人 | 经验不限 | 学历不限\n【特别提醒】如对我司机职位有意向的可以按以下两个操作任选一个即可："
+            android:textColor="#000" />
+
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        app:navigationIcon="@drawable/ic_arrow_back_black_24dp"
+        app:title="个人信息" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:paddingBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/userInforLayout"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:background="?selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="15dp"
+                    android:text="头像"
+                    android:textColor="#000"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="50dp"
+                    android:text="使用真实头像更容易得到Boss的青睐"
+                    android:textColor="#ECBD49"
+                    android:textSize="14sp" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:id="@+id/imgtx"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="16dp"
+                    android:src="@drawable/d" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="#C3C1C1" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/userNameRelayout"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:background="?selectableItemBackground"
+                android:focusable="true"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="15dp"
+                    android:text="姓名"
+                    android:textColor="#999"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/userName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="50dp"
+                    android:text="Mr. Qi"
+                    android:textColor="#000"
+                    android:textSize="17sp" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_keyboard_arrow_right_black_24dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="#C3C1C1" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/userNickNameRelayout"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:background="?selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="15dp"
+                    android:text="昵称"
+                    android:textColor="#C3C1C1"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/userNickName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="50dp"
+                    android:text="Beloved"
+                    android:textColor="#000"
+                    android:textSize="17sp" />
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_keyboard_arrow_right_black_24dp" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="#C3C1C1" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/userSexRelayout"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="15dp"
+                    android:text="性别"
+                    android:textColor="#C3C1C1"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="50dp"
+                    android:text="男"
+                    android:textColor="#000"
+                    android:textSize="17sp" />
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_keyboard_arrow_right_black_24dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="#C3C1C1" />
+            </RelativeLayout>
+
+<!--            <RelativeLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="90dp"-->
+<!--                android:background="?selectableItemBackground"-->
+<!--                android:clickable="true"-->
+<!--                android:focusable="true"-->
+<!--                android:paddingStart="20dp"-->
+<!--                android:paddingEnd="20dp">-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_alignParentTop="true"-->
+<!--                    android:layout_marginTop="15dp"-->
+<!--                    android:text="参加工作时间"-->
+<!--                    android:textColor="#C3C1C1"-->
+<!--                    android:textSize="16sp" />-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_alignParentTop="true"-->
+<!--                    android:layout_marginTop="50dp"-->
+<!--                    android:text="2019.09"-->
+<!--                    android:textColor="#000"-->
+<!--                    android:textSize="17sp" />-->
+<!--                <ImageView-->
+<!--                    android:layout_width="30dp"-->
+<!--                    android:layout_marginTop="30dp"-->
+<!--                    android:layout_alignParentEnd="true"-->
+<!--                    android:layout_height="30dp"-->
+<!--                    android:src="@drawable/ic_keyboard_arrow_right_black_24dp" />-->
+
+<!--                <View-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="0.5dp"-->
+<!--                    android:layout_alignParentBottom="true"-->
+<!--                    android:layout_marginStart="10dp"-->
+<!--                    android:layout_marginEnd="10dp"-->
+<!--                    android:background="#C3C1C1" />-->
+<!--            </RelativeLayout>-->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:background="?selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="15dp"
+                    android:text="微信号"
+                    android:textColor="#C3C1C1"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="50dp"
+                    android:text="1944227350"
+                    android:textColor="#000"
+                    android:textSize="17sp" />
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_keyboard_arrow_right_black_24dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="#C3C1C1" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/userBornDateRelayout"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:background="?selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="30dp"
+                    android:src="@drawable/ic_keyboard_arrow_right_black_24dp" />
+
+                <TextView
+                    android:id="@+id/showBornDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="50dp"
+                    android:text="1999-03-16"
+                    android:textColor="#000"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="15dp"
+                    android:text="出生年月"
+                    android:textColor="#C3C1C1"
+                    android:textSize="16sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="#C3C1C1" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/userAdvantageRelayout"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:background="?selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="15dp"
+                    android:text="我的优势"
+                    android:textColor="#C3C1C1"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/userAdvantage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="50dp"
+                    android:ellipsize="end"
+                    android:text="熟悉java语言，具有良好的编程习惯"
+                    android:textColor="#000"
+                    android:textSize="17sp" />
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_keyboard_arrow_right_black_24dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="#C3C1C1" />
+            </RelativeLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

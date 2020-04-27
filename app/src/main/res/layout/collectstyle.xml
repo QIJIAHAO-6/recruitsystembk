@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:id="@+id/root"
+    android:background="#eee"
+    android:paddingBottom="15dp"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:paddingTop="10dp"
+        android:background="#FFF"
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:orientation="vertical"
+      >
+
+        <TextView
+            android:id="@+id/collectJobName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="猿辅导-视频研究实习"
+            android:textColor="#000"
+            android:textSize="19sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/collectJobCompany"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_below="@+id/collectJobName"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="17dp"
+            android:background="@drawable/mq"
+            android:paddingStart="10dp"
+            android:paddingTop="5dp"
+            android:paddingEnd="10dp"
+            android:paddingBottom="5dp"
+            android:text="名企"
+            android:textColor="#FFF"
+            android:textSize="13sp" />
+
+
+<!--        <TextView-->
+<!--            android:id="@+id/collectPostLimit"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@+id/collectPostSalary"-->
+<!--            android:layout_marginStart="13dp"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:background="#eee"-->
+<!--            android:text="本科"-->
+<!--            android:textColor="#706E6E"-->
+<!--            android:textSize="15sp" />-->
+
+        <TextView
+            android:id="@+id/collectPostSalary"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+           android:layout_below="@+id/collectJobCompany"
+            android:text="600-800/天"
+            android:textColor="#0C9F41"
+            android:textSize="20sp" />
+
+<!--        <de.hdodenhof.circleimageview.CircleImageView-->
+<!--            android:id="@+id/img"-->
+<!--            android:layout_width="30dp"-->
+<!--            android:layout_height="30dp"-->
+<!--            android:layout_below="@+id/collectPostLimit"-->
+<!--            android:layout_alignParentStart="true"-->
+<!--            android:layout_alignParentBottom="true"-->
+<!--            android:layout_marginStart="20dp"-->
+<!--            android:layout_marginBottom="10dp"-->
+<!--            android:layout_marginTop="15dp"-->
+<!--            android:src="@mipmap/ic_launcher" />-->
+
+
+<!--        <TextView-->
+<!--            android:id="@+id/tv7"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_alignParentBottom="true"-->
+<!--            android:layout_marginStart="11dp"-->
+<!--            android:layout_marginTop="22dp"-->
+<!--            android:layout_marginBottom="29dp"-->
+<!--            android:layout_toEndOf="@+id/img"-->
+<!--            android:text="王大美.HRBP"-->
+<!--            android:textColor="#000"-->
+<!--            android:textSize="15sp" />-->
+
+    </RelativeLayout>
+</LinearLayout>
